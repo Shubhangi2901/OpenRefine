@@ -37,7 +37,19 @@
     <finalName>openrefine</finalName>
     <resources>
     </resources>
-    <plugins>
+    <plugins>    
+    <!-- To define the plugin version in your parent POM -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jlink-plugin</artifactId>
+          <version>3.0.0-alpha-1</version>
+        </plugin>
+    <!-- To use the plugin goals in your POM or parent POM -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jlink-plugin</artifactId>
+        <version>3.0.0-alpha-1</version>
+      </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>build-helper-maven-plugin</artifactId>
